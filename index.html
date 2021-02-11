@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta name="Groessenwahn" content="Titelzeile im Meta Tag">
+    <meta name="author" content="CIMDATA project">
+    <meta name="description" content="website of Groessenwhan - Arts Cafe Bar">
+    <meta name="abstract" content="Art Cafe Cuture Live Music Bar">
+    <meta name="date" content="02/03/2019">
+    <meta name="keywords" lang="de" content="Cafe, Art, Music, Culture, Bar, Events, Food, Snacks, Berlin">
+
+    <title>Grossenwahn</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device, initial-scale=1">
+
+    <!-- awesome fonts for generating icons-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- awesome fonts for generating icons ends here!-->
+
+    <!-- fonts from google -->
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Concert+One|Maiden+Orange|Niconne|Permanent+Marker|Pompiere&display=swap"
+        rel="stylesheet">
+
+    <!-- google fonts end -->
+
+    <!-- fadeshow javascript files -->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/fadeslideshow.js"></script>
+
+    <!-- Hier werden die Bilder, deren Größe bestimmt. -->
+    <script type="text/javascript">
+        var mygallery = new fadeSlideShow({
+            // Die Box in der die Slideshow steckt. Muss unten eingebettet sein
+            wrapperid: "fadeshow",
+            dimensions: [800, 800], // Breite und Höhe der Galeriebilder
+            imagearray: [
+                ["images/homepage/food1.jpg"],
+                ["images/homepage/coffee.jpg"],
+                ["images/homepage/butterflies.jpg"],
+                ["images/homepage/drinks.jpg"],
+                ["images/homepage/hangout.jpg"],
+                ["images/homepage/music.jpg"]//<--Kein Abschlusskomma!!
+            ],
+            displaymode: { type: 'auto', pause: 2000, cycles: 0, wraparound: false },
+            persist: false, // Wird das letzte Bilder beim nächsten Besuch eingeblendet?
+            fadeduration: 2500, // Überblenden Dauer (millisekunden)
+            descreveal: "ondemand",
+            togglerid: ""
+        })
+
+    </script>
+    <!-- ENDE KOPIE -->
+
+</head>
+
+<body>
+
+    <main id="main-container">
+        <div class="opening">
+            <div id="timings">
+                Opening Hours: Monday to Saturday 11AM to 11PM
+            </div>
+            <div class="phone">
+                Call us at: 0163 524 16 19
+            </div>
+        </div>
+
+        <!-- head section, this is where the navigation and logo will appear -->
+
+        <header id="header">
+
+            <nav id="logo">
+                <a href="index.html"><img src="images/homepage/logo.png" width="130" height="130" alt="logo"></a>
+            </nav>
+            <nav id="navi-box">
+                <div class="navi-item">
+                    <a href="speisekarte.html">SPEISEKARTE</a>
+                </div>
+
+
+                <!-- HOVER SECTION START-->
+
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="kunst.html">KUNST IM CAFE</a>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="music.html">MUSIC</a>
+                        <a href="ausstellungen.html">AUSSTELLUNGEN</a>
+
+                    </div>
+                </div>
+
+                <!-- HOVER SECTION END-->
+
+                <!--  duplicate for mobile responsive-->
+
+                <div class="navi-item-mobile">
+                    <a href="kunst.html">KUNST IM CAFE</a>
+                </div>
+                <div class="navi-item-mobile">
+                    <a href="music.html">MUSIC</a>
+                </div>
+                <div class="navi-item-mobile">
+                    <a href="ausstellungen.html">AUSSTELLUNGEN</a>
+                </div>
+
+                <!--  duplicate for mobile responsive ends here-->
+
+                <div class="navi-item">
+                    <a href="galerie.html">GALERIE</a>
+                </div>
+                <div class="navi-item">
+                    <a href="events.html">EVENTS</a>
+                </div>
+                <div class="navi-item">
+                    <a href="kontakt.html">KONTAKT</a>
+                </div>
+            </nav>
+
+
+        </header>
+
+        <!-- this is the middle section, content will be displayed here -->
+
+        <section id="middle">
+            <aside id="sidebar-container">
+                <div class="sidebar-card">
+                    <div class="sidebar-pic">
+                        <img src="images/homepage/phto-session.jpg" width="120" height="143" alt="girl dancing">
+                    </div>
+                    <article class="sidebar-text">
+                        <h1>NEWS</h1> <br>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing.
+                        </p>
+                    </article>
+                </div>
+                <div class="sidebar-card">
+                    <div class="sidebar-pic">
+
+                    </div>
+                    <article class="sidebar-text">
+                        <h1>GEAR</h1>
+                        <p><br>
+                            Lorem Ipsum is simply dummy text of the printing and typelectronic typesetting.Lorem Ipsum
+                            is simply dummy text of the printing and typelectronic typesetting. Lorem Ipsum is simply
+                            dummy text of the printing and typelectronic typesetting.
+                        </p>
+                    </article>
+                </div>
+                <div class="sidebar-card">
+                    <div class="sidebar-pic">
+
+                    </div>
+                    <article class="sidebar-text">
+
+                        <h1>EVENTS</h1><br>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typelectronic typesetting.Lorem Ipsum is
+                            simply dummy text of the printing and typelectronic typesetting.
+                        </p>
+                    </article>
+                </div>
+            </aside>
+
+            <!-- FADESHOW STARTS HERE -->
+
+            <section id="fadeshow"></section>
+
+            <!-- FADESHOW ENDS HERE-->
+
+        </section>
+
+        <!-- middle section ends here -->
+
+        <!-- footer section all the way down-->
+
+        <footer id="footer-container">
+            <div id="copyright">
+                copyright © 2005
+            </div>
+            <div id="social-container">
+                <link class="icon">
+                <a href="http:www.facebook.com"><i class="fa fa-facebook-square" style="font-size:24px"></i></a>
+                </link>
+                <link class="icon">
+                <a href="http:www.twitter.com"><i class="fa fa-twitter-square" style="font-size:24px"></i></a>
+                </link>
+                <link class="icon">
+                <a href="http:www.instagram.com"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+                </link>
+            </div>
+        </footer>
+    </main>
+
+
+</body>
+
+</html>

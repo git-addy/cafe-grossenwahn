@@ -1,0 +1,1107 @@
+/*  Ein Kommentar in CSS */
+
+/*  Der * definiert den "global reset" Hier werden alle Elemente angesprochen, die später nicht anders definiert werden. */
+*
+{
+/* margin definiert den Aussenabstand einer Box */	
+	margin:0px;	
+/* padding definiert	den Innenabstand einer Box */
+	padding:0px;
+/* font-family definiert die Schriftart */	
+	_font-family:sans-serif;
+/* position:relative definiert die Startposition einer Box */	
+	position:relative;
+/*  box-sizing:border-box definiert das padding und border NICHT zu Breite und Höhe dazu addiert werden  */	
+	box-sizing:border-box;
+}
+
+
+html,body
+{
+	/* height:100%; */
+}
+
+/* body 
+{
+	background:white;
+	font-family:sans-serif;
+	color:white;
+	margin:0px;
+}
+
+img
+{
+	max-width:100%;
+	height:auto;
+}
+
+a
+{
+	color:black;
+	text-decoration:none;
+	
+}
+
+p
+{
+    font-family: comic sans;    
+} */
+
+/* WHOLE PAGE CONTAINER START */
+#main-container
+{
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    _background: lightblue;
+    margin: auto;
+}
+
+.opening {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* WHOLE PAGE CONTAINER END */
+
+/* HEADER SECTION START */
+
+#header
+{
+    _width: 1024px;
+    height: 130px;
+   _background: pink;
+    display: flex;
+    
+}
+
+#logo
+{
+    width: 200px;
+    height: 130px;
+    background: #704E3B;
+    padding: 5px 5px 5px 25px;
+    padding-bottom: 2px;
+    _opacity: .7;
+    
+}
+
+#navi-box
+{
+    width: 840px;
+    height: 130px;
+    line-height: 130px;
+    background: #704E3B;
+    color: #d8d8d8;
+    _opacity: .7;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Marker Felt', cursive;
+    font-weight: bold;
+    font-size: 22px;
+    position: relative;
+    z-index: 1;
+    
+    
+}
+
+.navi-item
+{
+    
+}
+
+.navi-item-mobile
+{
+    display: none;
+}
+
+.navi-item a
+{
+    color: #d8d8d8;
+    transition: .5s;
+    transform: scale(1);
+}
+
+/* Common hover for all navi items */
+
+.navi-item:hover a
+{
+    color: orange;
+    font-size: 150%;
+    transition: .5s;
+    transform: scale(1);
+    
+}
+/* Common hover for all navi items ends here */
+
+/* SPECIAL HOVER DROPDOWN MENU FOR KUNST IM CAFE */
+
+/* Dropdown Button */
+
+.dropbtn {
+    background: #704E3B;
+    color: #d8d8d8;
+    height: 130px;
+	line-height: 130px;
+	border: none;
+    font-family: 'Marker Felt', cursive;
+    font-weight: bold;
+    font-size: 22px;  
+}
+
+.dropbtn a
+{
+	color: #d8d8d8;
+	font-weight: bold;
+    font-size: 22px;
+	font-family: 'Marker Felt', cursive;
+}
+
+.dropbtn:hover a
+{
+    color: orange;
+    font-size: 120%;
+    transition: .5s;
+    transform: scale(1);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  background-color: #f1f1f1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  
+  padding: auto;
+  text-align: center;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover 
+{
+    color: #d8d8d8;
+    background: #63725B;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn 
+{
+   
+    font-size: 150%;
+    transition: .5s;
+    transform: scale(1);
+    color: #d8d8d8;
+    opacity: .7;
+    height: 100px;
+    font-family: 'Marker Felt', cursive;
+    font-weight: bold;
+    font-size: 22px;
+    background: black;
+}
+
+/* SPECIAL HOVER DROPDOWN FOR KUNST IM CAFE ENDS HERE */
+
+#timings
+{
+    _width: 380px;
+   _background: lightgreen;
+    color: #111110;
+    position: relative;
+    z-index: 1;
+    /* top:100px;
+    left: 630px; */
+    font-family: 'Marker Felt', cursive;
+    
+}
+
+/* HEADER SECTION ENDS HERE */
+
+
+/* MIDDLE SECTION OF ALL PAGES */
+
+/* SIDEBAR COMMON TO ALL*/
+
+#sidebar-container
+{
+    width: 224px;
+    height: 854px;
+    _background: teal;
+}
+
+.sidebar-card
+{
+    width: 100%;
+    height: 267px;
+    background: #63725B;
+    padding:20px;
+}
+
+.sidebar-pic
+{
+    
+}
+
+.sidebar-text
+{
+    
+}
+
+/* SIDEBAR ENDS HERE */
+
+/* CONTENT DISPLAY SECTION FOR ALL PAGES */
+
+/* index.html start */
+
+#middle
+{
+    width: 100%;
+    height: 800px;
+    _background: yellow;
+    display: flex;
+    position: relative;
+}
+
+#fadeshow
+{
+    
+    position: absolute;
+    z-index: -1;
+}
+
+/* index.html end */
+
+/* speisekarte.html start */
+
+#speisekarte-wrapper
+{
+	width: 804px;
+	height: 800px;
+    background:url(../images/speisekarte/speis_heiss1.jpg) fixed;
+	background-size:cover;
+	display:flex;
+}
+
+#speisekarte-content
+{
+	width: 50%;
+    padding: 10px;
+    height:auto;
+	color: #d8d8d8;
+	word-wrap: break-word;
+}
+
+#speisekarte-content p
+{
+	font-size: 19px;
+	font-family: 'Pompiere', cursive;
+	
+}
+
+/* speisekarte.html end */
+
+/* kunst.html start */
+
+#kunst-wrapper {
+	width: 804px;
+	height: 800px;
+	background: url(../images/kunst/bar_3.jpg) fixed;
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+
+#kunst-content
+{
+    width: 100%;
+    padding: 15px;
+}
+
+#kunst-content p
+{
+    font-size: 19px;
+}
+
+#links-section a
+{
+    _background: pink;
+    display: flex;
+    padding: 20px;
+    color: white;
+    
+}
+
+/* kunst.html end */
+
+/* music.html start */
+
+#music-wrapper
+{
+    background: #403d3d;
+    width: 804px;
+    height: 800px;
+    overflow: scroll;
+}
+
+#music-wrapper h1
+{
+    padding: 10px;
+    color: #D8D8D8;
+}
+
+/* music.html end */
+
+/* ausstellungen.html start */
+
+#ausstellungen-wrapper
+{
+    background: #403d3d;
+    width: 804px;
+    height: 800px;
+    overflow: scroll;
+}
+
+#ausstellungen-wrapper h1
+{
+	padding: 10px;
+    color: #D8D8D8;
+}
+
+/* ausstellungen.html end */
+
+/* galerie.html start */
+
+#gallery-wrapper {
+	width: 804px;
+	height: 800px;
+	margin-bottom: 20px;
+	background: #403d3d;
+	overflow: scroll;
+}
+
+#gallery
+{
+	width: 800px;
+}
+
+#gallery h3
+{
+	padding: 10px;
+}
+
+#gallery img.output
+{
+	width: 800px;
+	height: 400px;
+}
+
+#gallery span.caption
+{
+	display: block;
+	margin: 1em 0 1em 0;
+	
+}
+
+#thumbnail-bg {
+	background: #323435;
+	display:flex;
+	margin: 5px;
+}
+
+.thumbnails
+{
+	margin: 5px;
+}
+
+#gallery ul.thumbnails
+{
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 5px;
+}
+
+#gallery ul.thumbnails li
+{
+	_float: left;
+	margin: 0 8px 1em 0;
+	
+}
+
+#gallery ul.thumbnails li img .last 
+{
+	margin-right: 0px;
+}
+
+#gallery ul.thumbnails li img
+{
+	width: 137px;
+	height: 85px;
+	border: solid 5px #323435;
+	cursor: pointer;
+}
+
+#gallery ul.thumbnails li img.active
+{
+	border: solid 5px #262728;
+}
+
+/* galerie.html end */
+
+/* events.html start */
+
+#events-wrapper
+{
+    background: #403d3d;
+    width: 804px;
+    height: 812px;
+    overflow: scroll;
+}
+
+#events-wrapper h1
+{
+    padding: 20px;
+}
+
+.content-box p
+{
+    padding: 15px 0px 15px 0px;
+    font-family: hand;
+}
+
+.content-box
+{
+    _background: teal;
+    height:auto;
+    padding-left: 10px;
+    margin: 10px;
+    border-bottom: solid 2px white;
+    color: #d8d8d8;
+}
+
+/* events.html end */
+
+/* kontakt.html start */
+
+#kontakt-wrapper
+{
+	background: #403d3d;
+    width: 804px;
+    height: 800px;
+	overflow: scroll;
+}
+
+#konatkt-wrapper h3, #formular h3 
+{
+	padding:20px;
+}
+
+#map
+{
+	padding: 30px;
+}
+
+/* kontakt.html end */
+
+
+/* CONTENT DISPLAY SECTION FOR ALL PAGES ENDS HERE*/
+/* MIDDLE SECTION OF ALL PAGES ALSO ENDS HERE */
+
+
+/* FOOTER SECTION START */
+
+#footer-container
+{
+    width: 1024px;
+    height: 40px;
+    background: #704E3B;
+    _opacity: .7;
+    display: flex;
+    color: #d8d8d8;
+}
+
+#copyright
+{
+    width: 85%;
+    padding: 10px;
+    _background: grey;   
+}
+
+#social-container
+{
+    width: 15%;
+    height: 40px;
+    line-height: 40px;
+    _background: navy;
+    display: flex;
+    float: right;
+    padding: 5px;
+    
+    justify-content: space-around;
+    color: #d8d8d8;
+}
+
+#social-container a
+{
+	color:white;
+}
+
+/* FOOTER SECTION END */
+
+
+
+
+
+
+/* MEDIA QUERY */
+@media screen and (max-width:400px) {
+	
+/* WHOLE PAGE CONTAINER START */
+#main-container
+{
+    width: 400px;
+    height: auto;
+    background: lightblue;
+    margin: auto;
+}
+
+/* WHOLE PAGE CONTAINER END */
+
+/* HEADER SECTION START */
+
+#header
+{
+    width: 100%;
+    height: auto;
+   _background: pink;
+    display: block;
+    
+}
+
+#logo
+{
+    width: 100%;
+    height: 140px;
+    background: #704E3B;
+    padding-bottom: 15px;
+    _opacity: .7;
+    
+}
+
+#navi-box
+{
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    background: #704E3B;
+    color: #d8d8d8;
+    _padding: 10px;
+    display: block;
+    font-family: 'Marker Felt', cursive;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+    
+.navi-item
+{
+    _padding-top: 10px; 
+    background: #704E3B;
+}
+    
+.navi-item a
+{
+    color: #d8d8d8;
+    padding-left: 10px;
+    _transition: .5s;
+    _transform: scale(1);
+}
+
+.navi-item-mobile, a 
+{
+    display: block;
+    color: #d8d8d8;
+    transition: .5s;
+    transform: scale(1);
+    padding-top: 10px;
+    background: #704E3B;
+    padding-left: 10px;
+    
+}
+    
+.navi-item-mobile:hover a
+{
+    color: orange;
+    font-size: 150%;
+    transition: .5s;
+    transform: scale(1);
+    _background: #704E3B;
+}    
+
+/* SPECIAL HOVER DROPDOWN MENU FOR KUNST IM CAFE */
+
+/* Dropdown Button */
+
+.dropbtn {
+    background: #704E3B;
+    color: #d8d8d8;
+    height: 20px;
+	line-height: 20px;
+	border: none;
+    font-family: 'Marker Felt', cursive;
+    font-weight: bold;
+    font-size: 18px;  
+    display: none;
+}
+
+.dropbtn a
+{
+	color: #d8d8d8;
+	font-weight: bold;
+    font-size: 18px;
+	font-family: 'Marker Felt', cursive;
+    _display: none;
+}
+
+.dropbtn:hover a
+{
+    color: orange;
+    font-size: 120%;
+    transition: .5s;
+    transform: scale(1);
+    display: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  background-color: #f1f1f1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  
+  padding: auto;
+  text-align: center;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover 
+{
+    color: #d8d8d8;
+    background: #63725B;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn 
+{
+   
+    font-size: 150%;
+    transition: .5s;
+    transform: scale(1);
+    color: #d8d8d8;
+    opacity: .7;
+    height: 100px;
+    font-family: 'Marker Felt', cursive;
+    font-weight: bold;
+    font-size: 22px;
+    background: black;
+}
+
+/* SPECIAL HOVER DROPDOWN FOR KUNST IM CAFE ENDS HERE */
+
+    
+#timings
+{
+   
+    display: none;
+    
+}
+
+/* HEADER SECTION ENDS HERE */
+
+
+/* MIDDLE SECTION OF ALL PAGES */
+
+/* SIDEBAR COMMON TO ALL*/
+
+#sidebar-container
+{
+    width: 400px;
+    height: auto;
+    _background: teal;
+    padding-top: 340px;
+    
+}
+
+.sidebar-card
+{
+    width: 100%;
+    height: 267px;
+    background: #63725B;
+    padding:20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.sidebar-pic
+{
+    
+}
+
+.sidebar-text
+{
+    
+}
+
+/* SIDEBAR ENDS HERE */
+
+/* CONTENT DISPLAY SECTION FOR ALL PAGES */
+
+/* index.html start */
+
+#middle
+{
+    width: 100%;
+    height: 800px;
+    _background: yellow;
+    display: block;
+    position: relative;
+}
+
+#fadeshow
+{
+    
+    _position: absolute;
+    z-index: -1;
+    display: none;
+}
+
+/* index.html end */
+
+/* speisekarte.html start */
+
+#speisekarte-wrapper
+{
+	width: 100%;
+	height: auto;
+    background:url(../images/speisekarte/speis_heiss1.jpg) fixed;
+	background-size:cover;
+    _background-repeat: repeat;
+	display:block;
+    
+}
+
+#speisekarte-content
+{
+	width: 50%;
+    padding: 10px;
+    height:auto;
+	color: #d8d8d8;
+    display: block;
+    _flex-wrap: nowrap;
+}
+
+#speisekarte-content p
+{
+	font-size: 19px;
+	font-family: 'Pompiere', cursive;
+	
+}
+
+/* speisekarte.html end */
+
+/* kunst.html start */
+
+#kunst-wrapper {
+	width: 804px;
+	height: 800px;
+	background: url(../images/kunst/bar_3.jpg) fixed;
+    background-size: cover;
+    background-repeat: repeat-x;
+    _display: block;
+     flex-flow: column;
+    flex-wrap: wrap;
+}
+
+#kunst-content p h1 h3
+{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+   
+}
+
+#kunst-content p
+{
+    font-size: 16px;
+}
+
+#links-section a
+{
+    _background: pink;
+    display: flex;
+    padding: 20px;
+    color: white;
+
+}
+
+/* kunst.html end */
+
+/* music.html start */
+
+#music-wrapper
+{
+    background: #403d3d;
+    width: 804px;
+    height: 800px;
+    overflow: scroll;
+}
+
+#music-wrapper h1
+{
+    padding: 10px;
+    color: #D8D8D8;
+}
+
+/* music.html end */
+
+/* ausstellungen.html start */
+
+#ausstellungen-wrapper
+{
+    background: #403d3d;
+    width: 804px;
+    height: 800px;
+    overflow: scroll;
+}
+
+#ausstellungen-wrapper h1
+{
+	padding: 10px;
+    color: #D8D8D8;
+}
+
+/* ausstellungen.html end */
+
+/* galerie.html start */
+
+#gallery-wrapper {
+	width: 804px;
+	height: 800px;
+	margin-bottom: 20px;
+	background: #403d3d;
+	overflow: scroll;
+}
+
+#gallery
+{
+	width: 800px;
+}
+
+#gallery h3
+{
+	padding: 10px;
+}
+
+#gallery img.output
+{
+	width: 800px;
+	height: 400px;
+}
+
+#gallery span.caption
+{
+	display: block;
+	margin: 1em 0 1em 0;
+	
+}
+
+#thumbnail-bg {
+	background: #323435;
+	display:flex;
+	margin: 5px;
+}
+
+.thumbnails
+{
+	margin: 5px;
+}
+
+#gallery ul.thumbnails
+{
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 5px;
+}
+
+#gallery ul.thumbnails li
+{
+	_float: left;
+	margin: 0 8px 1em 0;
+	
+}
+
+#gallery ul.thumbnails li img .last 
+{
+	margin-right: 0px;
+}
+
+#gallery ul.thumbnails li img
+{
+	width: 137px;
+	height: 85px;
+	border: solid 5px #323435;
+	cursor: pointer;
+}
+
+#gallery ul.thumbnails li img.active
+{
+	border: solid 5px #262728;
+}
+
+/* galerie.html end */
+
+/* events.html start */
+
+#events-wrapper
+{
+    background: #403d3d;
+    width: 804px;
+    height: 812px;
+    overflow: scroll;
+}
+
+#events-wrapper h1
+{
+    padding: 20px;
+}
+
+.content-box p h1 h3
+{
+    _padding: 15px 0px 15px 0px;
+    font-family: hand;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-box
+{
+    _background: teal;
+    height:auto;
+    padding-left: 10px;
+    margin: 0px;
+    _border-bottom: solid 2px white;
+    color: #d8d8d8;
+    _display: inline-flex;
+}
+
+/* events.html end */
+
+/* kontakt.html start */
+
+#kontakt-wrapper
+{
+	background: #403d3d;
+    width: 804px;
+    height: 800px;
+	overflow: scroll;
+}
+
+#konatkt-wrapper h3, #formular h3 
+{
+	padding:20px;
+}
+
+#map
+{
+	padding: 30px;
+}
+
+/* kontakt.html end */
+
+
+/* CONTENT DISPLAY SECTION FOR ALL PAGES ENDS HERE*/
+/* MIDDLE SECTION OF ALL PAGES ALSO ENDS HERE */
+
+
+/* FOOTER SECTION START */
+
+#footer-container
+{
+    width: 100%;
+    height: auto;
+    background: #704E3B;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #d8d8d8;
+}
+
+#copyright
+{
+    width: 50%;
+    padding: 10px;
+    _background: grey;   
+}
+
+#social-container
+{
+    width: 50%;
+    height: 20px;
+    line-height: 20px;
+    _background: navy;
+    display: flex;
+    float: none;
+    padding: 5px;
+    color: #d8d8d8;
+}
+
+#social-container a
+{
+	color:white;
+    
+}
+
+.icon
+{
+    
+}  
+/* FOOTER SECTION END */
+
+	
+	
+
+	
+	
+	
+	
+}
